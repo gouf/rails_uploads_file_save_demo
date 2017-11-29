@@ -14,6 +14,7 @@ table
       tr
         td = image.name
         td = image.path
+        td = type_specific_tag(image.path)
         td = link_to 'Show', image
         td = link_to 'Edit', edit_image_path(image)
         td = link_to 'Destroy', image, data: { confirm: 'Are you sure?' }, method: :delete

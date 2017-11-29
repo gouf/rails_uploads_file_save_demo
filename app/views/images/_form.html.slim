@@ -8,8 +8,8 @@
 
   .field
     = f.label :name
-    = f.text_field :name
+    = f.text_field :name, value: Date.today.to_s
   .field
     = f.label :path
-    = f.text_field :path
-  .actions = f.submit
+    = f.file_field :path
+  .actions = f.submit 'Upload Image'
